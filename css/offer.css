@@ -1,0 +1,125 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.offer__container {
+  padding-top: 119px;
+  padding-bottom: 140px;
+}
+
+.offer__title {
+  margin-bottom: 81px;
+}
+
+/* ------------------ */
+/* --- CARD LIST --- */
+/* ---------------- */
+
+.cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 40px 1fr 40px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.cards__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+  padding: 40px;
+  text-align: center;
+  border-radius: var(--card-border-rad);
+  border: 1px solid rgba(20, 16, 36, 0.20);
+  -webkit-transition: background-color 0.3s ease-in-out,
+    border-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out,
+    border-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out,
+    border-color 0.3s ease-in-out;
+}
+
+.cards__subtitle {
+  margin-bottom: 48px;
+  text-align: center;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 48px;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+.cards__price {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 80px;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+.cards__descr {
+  max-width: 250px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28.8px;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+.cards__content-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 47px;
+}
+
+.cards__btn {
+  width: 100%;
+}
+
+/* --- cards transitions --- */
+
+.cards__wrap:focus-visible {
+  color: var(--white-color);
+  border-color: var(--main-text-color);
+  background-color: var(--main-text-color);
+}
+
+@media (any-hover: hover) {
+  .cards__wrap:hover {
+    color: var(--white-color);
+    border-color: var(--main-text-color);
+    background-color: var(--main-text-color);
+  }
+}
+
+.cards__btn:focus-visible {
+  outline: 1px solid var(--main-text-color);
+  outline-offset: 4px;
+} 

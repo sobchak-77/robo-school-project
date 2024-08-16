@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 viewport-fit=cover">
+  <meta name="description" content="Advanced training courses in robotics for primary school teachers page">
+  <title>Robo School - обучаем робототехнике</title>
+  <!-- fonts -->
+  <link rel="preload" href="fonts/Jost-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Jost-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <!-- styles -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="libs/css/choices.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/benefits.css">
+  <link rel="stylesheet" href="css/coaches.css">
+  <link rel="stylesheet" href="css/offer.css">
+  <link rel="stylesheet" href="css/contact-us.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/modal.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body class="page__body">
+  <header class="header">
+    <div class="header__container panel container">
+      <!-- main logo -->
+      <a class="main-logo link-reset" href="#">
+        <img class="main-logo__img img-style" src="img/robo-school-main-logo.svg" alt="Логотип Robo School.">
+      </a>
+      <!-- menu -->
+      <nav class="panel__nav menu">
+        <ul class="menu__list list-reset">
+          <li class="menu__item">
+            <a class="menu__link link-reset" href="#about">О&nbsp;школе</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link link-reset" href="#coaches">Тренеры</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link link-reset" href="#offer">Стоимость</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- telephone contact -->
+      <a class="panel__contact header__contact link-reset" href="tel:+78000001122" aria-label="Телефон школы">
+        +7 800 000 11 22
+      </a>
+      <div class="header__mobile-buttons">
+        <a class="header__phone-btn mobile-btn link-reset" href="tel:+78000001122" aria-label="Телефон школы">
+          <svg class="header__phone-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M16.1668 12.3797C15.4951 12.2352 14.9637 12.5471 14.4932 12.8194C14.0114 13.1001 13.0951 13.8434 12.57 13.6531C9.88108 12.546 7.35213 10.1925 6.25739 7.49286C6.06444 6.95647 6.80424 6.0344 7.08283 5.54686C7.35316 5.07492 7.65858 4.53852 7.51928 3.86178C7.3934 3.25366 5.76522 1.18188 5.18947 0.615332C4.80977 0.241101 4.42078 0.0352739 4.02147 0.00200893C2.5202 -0.0624419 0.843516 1.94073 0.549452 2.41996C-0.187255 3.44181 -0.183128 4.80152 0.561834 6.45021C2.35717 10.8786 9.14747 17.5618 13.5925 19.4246C14.4128 19.8082 15.1629 20.0005 15.8366 20.0005C16.496 20.0005 17.0831 19.8165 17.5876 19.4516C17.9684 19.2323 20.0536 17.4724 19.9989 15.9307C19.9659 15.5378 19.7606 15.1448 19.3912 14.7644C18.8289 14.1833 16.7704 12.5065 16.1668 12.3797Z"
+              fill="white" />
+          </svg>
+        </a>
+        <!-- burger menu button -->
+        <button class="header__burger mobile-btn burger btn-reset" id="burger" aria-label="Открыть меню">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="hero">
+      <div class="hero__container container">
+        <h1 class="hero__title title-reset">ROBO SCHOOL</h1>
+        <p class="hero__descr descr-reset">
+          Курсы повышения квалификации по&nbsp;робототехнике для педагогов начальной школы
+        </p>
+        <a class="request-btn hero__btn link-reset" href="#">Записаться на&nbsp;курс</a>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="about__container container">
+        <h2 class="visually-hidden title-reset">О нашей школе</h2>
+        <p class="about__descr descr-reset">
+          <span class="about__descr-span">Robo School</span>&nbsp;&mdash; учреждение для формирования кадрового
+          педагогического резерва в&nbsp;сфере робототехники и&nbsp;программирования
+        </p>
+        <!-- description list -->
+        <ul class="about__stat stat list-reset">
+          <li class="stat__item">
+            <span class="stat__digit descr-reset">
+              <strong>10</strong>
+            </span>
+            <p class="stat__descr card-descr descr-reset">
+              УМК по&nbsp;различным направлениям по&nbsp;робототехнике
+            </p>
+          </li>
+          <li class="stat__item">
+            <span class="stat__digit descr-reset">
+              <strong>20</strong>
+            </span>
+            <p class="stat__descr card-descr descr-reset">
+              Школ, в&nbsp;которых запущена робототехника
+            </p>
+          </li>
+          <li class="stat__item">
+            <span class="stat__digit descr-reset">
+              <strong>100</strong>
+            </span>
+            <p class="stat__descr card-descr descr-reset">
+              Педагогов прошедших курсы повышения квалификации
+            </p>
+          </li>
+          <li class="stat__item">
+            <span class="stat__digit descr-reset">
+              <strong aria-hidden="true">10 000</strong>
+            </span>
+            <p class="stat__descr card-descr descr-reset">
+              Обученных детей на&nbsp;базе собственных центров
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="benefits">
+      <div class="benefits__container container">
+        <h2 class="benefits__title section-title title-reset">
+          Что вы&nbsp;получите после курса
+        </h2>
+        <!-- benefits list -->
+        <ul class="benefits__list list list-reset">
+          <li class="list__item">
+            <h3 class="list__subtitle subtitle title-reset">
+              Удостоверение
+            </h3>
+            <p class="list__descr card-descr descr-reset">
+              Дающее право преподавать робототехнику для детей 6-12 лет в&nbsp;образовательных учреждениях
+            </p>
+          </li>
+          <li class="list__item">
+            <h3 class="list__subtitle subtitle title-reset">
+              Знания
+            </h3>
+            <p class="list__descr card-descr descr-reset">
+              По&nbsp;основам разработки учебно-методических комплексов по&nbsp;робототехнике и&nbsp;программированию
+            </p>
+          </li>
+          <li class="list__item">
+            <h3 class="list__subtitle list__subtitle--tooltip subtitle title-reset">
+              Практику
+              <button class="list__tooltip-marker btn-reset" id="tooltipBtn" aria-label="Сноска">i</button>
+            </h3>
+            <p class="list__descr card-descr descr-reset">
+              Возможность пройти практику по&nbsp;преподаванию робототехники на&nbsp;базе R:ED LAB (в&nbsp;оффлайн или
+              онлайн формате)
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="coaches" id="coaches">
+      <div class="coaches__container container">
+        <h2 class="coaches__title section-title title-reset">
+          Профессиональные тренеры
+        </h2>
+        <!-- coaches list slider -->
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <!-- card #1 -->
+            <div class="swiper-slide coaches__slide">
+              <picture>
+                <source srcset="img/coach-img-mobile-1.webp" media="(max-width: 860px)">
+                <source srcset="img/coach-img-mobile-1.jpg" media="(max-width: 860px)">
+                <source srcset="img/coach-img-1.webp">
+                <img class="coaches__img img-style" src="img/coach-img-1.jpg" alt="Тренер Ирина Лайм.">
+              </picture>
+              <div class="coaches__info-wrap">
+                <div class="coaches__txt-wrap">
+                  <h3 class="coaches__subtitle subtitle title-reset">Ирина Лайм</h3>
+                  <p class="coaches__descr card-descr descr-reset">
+                    преподаватель по&nbsp;робототехнике
+                  </p>
+                </div>
+                <button class="coaches__btn btn-reset" data-path="open-modal-1">Подробнее</button>
+              </div>
+            </div>
+            <!-- card #2 -->
+            <div class="swiper-slide coaches__slide">
+              <picture>
+                <source srcset="img/coach-img-mobile-2.webp" media="(max-width: 860px)">
+                <source srcset="img/coach-img-mobile-2.jpg" media="(max-width: 860px)">
+                <source srcset="img/coach-img-2.webp">
+                <img class="coaches__img img-style" src="img/coach-img-2.jpg" alt="Тренер Марина Орлова.">
+              </picture>
+              <div class="coaches__info-wrap">
+                <div class="coaches__txt-wrap">
+                  <h3 class="coaches__subtitle subtitle title-reset">Марина Орлова</h3>
+                  <p class="coaches__descr card-descr descr-reset">
+                    преподаватель по&nbsp;робототехнике
+                  </p>
+                </div>
+                <button class="coaches__btn btn-reset" data-path="open-modal-2">Подробнее</button>
+              </div>
+            </div>
+            <!-- card #3 -->
+            <div class="swiper-slide coaches__slide">
+              <picture>
+                <source srcset="img/coach-img-mobile-1.webp" media="(max-width: 860px)">
+                <source srcset="img/coach-img-mobile-1.jpg" media="(max-width: 860px)">
+                <source srcset="img/coach-img-3.webp">
+                <img class="coaches__img img-style" src="img/coach-img-3.jpg" alt="Тренер Максим Петров.">
+              </picture>
+              <div class="coaches__info-wrap">
+                <div class="coaches__txt-wrap">
+                  <h3 class="coaches__subtitle subtitle title-reset">Максим Петров</h3>
+                  <p class="coaches__descr card-descr descr-reset">
+                    преподаватель по&nbsp;программированию
+                  </p>
+                </div>
+                <button class="coaches__btn btn-reset" data-path="open-modal-3">Подробнее</button>
+              </div>
+            </div>
+            <!-- card #4 -->
+            <div class="swiper-slide coaches__slide">
+              <picture>
+                <source srcset="img/coach-img-mobile-2.webp" media="(max-width: 860px)">
+                <source srcset="img/coach-img-mobile-2.jpg" media="(max-width: 860px)">
+                <source srcset="img/coach-img-4.webp">
+                <img class="coaches__img img-style" src="img/coach-img-4.jpg" alt="Тренер Константин Назаров.">
+              </picture>
+              <div class="coaches__info-wrap">
+                <div class="coaches__txt-wrap">
+                  <h3 class="coaches__subtitle subtitle title-reset">Константин Назаров</h3>
+                  <p class="coaches__descr card-descr descr-reset">
+                    преподаватель по&nbsp;робототехнике
+                  </p>
+                </div>
+                <button class="coaches__btn btn-reset" data-path="open-modal-4">Подробнее</button>
+              </div>
+            </div>
+            <!-- card #5 -->
+            <div class="swiper-slide coaches__slide">
+              <picture>
+                <source srcset="img/coach-img-mobile-1.webp" media="(max-width: 860px)">
+                <source srcset="img/coach-img-mobile-1.jpg" media="(max-width: 860px)">
+                <source srcset="img/coach-img-5.webp">
+                <img class="coaches__img img-style" src="img/coach-img-5.jpg" alt="Тренер Лиза Весенняя.">
+              </picture>
+              <div class="coaches__info-wrap">
+                <div class="coaches__txt-wrap">
+                  <h3 class="coaches__subtitle subtitle title-reset">Лиза Весенняя</h3>
+                  <p class="coaches__descr card-descr descr-reset">
+                    преподаватель по&nbsp;программированию
+                  </p>
+                </div>
+                <button class="coaches__btn btn-reset" data-path="open-modal-5">Подробнее</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- slider scrollbar -->
+        <div class="swiper-scrollbar swiper-scrollbar-horizontal" aria-hidden="true">
+          <div class="swiper-scrollbar-drag"></div>
+        </div>
+        <!-- slider buttons -->
+        <div class="swiper-navigation">
+          <button class="swiper-button-prev swiper-btn btn-reset" aria-label="Листать назад">
+            <svg class="coaches__slider-icon">
+              <use xlink:href="img/sprite.svg#slider-arrow-to-left"></use>
+            </svg>
+          </button>
+          <button class="swiper-button-next swiper-btn btn-reset" aria-label="Листать вперёд">
+            <svg class="coaches__slider-icon">
+              <use xlink:href="img/sprite.svg#slider-arrow-to-right"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="offer" id="offer">
+      <div class="offer__container container">
+        <h2 class="offer__title section-title title-reset">
+          Выберите нужный&nbsp;пакет
+        </h2>
+        <!-- offer list -->
+        <ul class="offer__cards cards list-reset">
+          <!-- card #1 -->
+          <li class="cards__item">
+            <article class="cards__wrap">
+              <h3 class="cards__subtitle title-reset">&mdash;&nbsp;PRO &mdash;</h3>
+              <div class="cards__content-wrap">
+                <span class="cards__price">20.000&nbsp;₽</span>
+                <p class="cards__descr descr-reset">
+                  УМК по&nbsp;робототетхнике и&nbsp;программированию
+                </p>
+              </div>
+              <a class="request-btn cards__btn link-reset" href="#">Оставить заявку</a>
+            </article>
+          </li>
+          <!-- card #2 -->
+          <li class="cards__item">
+            <article class="cards__wrap">
+              <h3 class="cards__subtitle title-reset">&mdash;&nbsp;ROBO &mdash;</h3>
+              <div class="cards__content-wrap">
+                <span class="cards__price">15.000&nbsp;₽</span>
+                <p class="cards__descr descr-reset">
+                  УМК по&nbsp;робототетхнике
+                </p>
+              </div>
+              <a class="request-btn cards__btn link-reset" href="#">Оставить заявку</a>
+            </article>
+          </li>
+          <!-- card #3 -->
+          <li class="cards__item">
+            <article class="cards__wrap">
+              <h3 class="cards__subtitle title-reset">&mdash;&nbsp;PROG &mdash;</h3>
+              <div class="cards__content-wrap">
+                <span class="cards__price">10.000&nbsp;₽</span>
+                <p class="cards__descr descr-reset">
+                  УМК по&nbsp;программированию
+                </p>
+              </div>
+              <a class="request-btn cards__btn link-reset" href="#">Оставить заявку</a>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="contact-us">
+      <div class="contact-us__container container">
+        <h2 class="visually-hidden title-reset">Обратная связь</h2>
+        <div class="contact-us__text">
+          <p class="contact-us__descr descr-reset">
+            Запишитесь на&nbsp;курс со&nbsp;скидкой&nbsp;10%
+          </p>
+          <p class="contact-us__remark descr-reset">
+            Акция действительна до&nbsp;10&nbsp;марта 2022&nbsp;года
+          </p>
+        </div>
+        <!-- feedback form -->
+        <form class="contact-us__form form" id="form" action="#" autocomplete="off">
+          <label class="form__label">
+            <input class="form__input" id="name" type="text" placeholder="Имя" name="name" autocomplete="off" required>
+          </label>
+          <label class="form__label">
+            <input class="form__input" id="tel" type="tel" placeholder="Телефон" name="tel" autocomplete="off" required>
+          </label>
+          <label class="form__label">
+            <input class="form__input" id="email" type="email" placeholder="E-mail" name="email" autocomplete="off" required>
+          </label>
+          <button class="form__btn btn-reset" id="form-submit-btn" type="submit" value="Отправить">
+            Оформить заявку
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container footer__panel panel container">
+      <!-- main logo -->
+      <a class="main-logo link-reset" href="#">
+        <img class="main-logo__img img-style" src="img/robo-school-main-logo.svg" alt="Логотип Robo School.">
+      </a>
+      <!-- telephone contact -->
+      <a class="panel__contact link-reset" href="tel:+78000001122" aria-label="Телефон школы">
+        +7 800 000 11 22
+      </a>
+    </div>
+    <!-- school copyrights -->
+    <div class="footer__container container">
+      <p class="footer__copy descr-reset">&copy;&nbsp;ROBO.SCHOOL</p>
+    </div>
+  </footer>
+
+  <!-------------------------->
+  <!-- COACHES MODAL WINDOW -->
+  <!-------------------------->
+  
+  <!-- modal window #1 -->
+  <div class="coaches-modal" data-target="open-modal-1">
+    <div class="coaches-modal__card">
+      <!-- card top part -->
+      <div class="coaches-modal__head">
+        <div class="coaches-modal__head-wrap">
+          <picture>
+            <source srcset="img/coach-img-tooltip-mobile-2.webp" media="(max-width: 620px)">
+            <source srcset="img/coach-img-tooltip-mobile-2.jpg" media="(max-width: 620px)">
+            <source srcset="img/coach-img-tooltip-2.webp">
+            <img class="coaches-modal__img img-style" src="img/coach-img-tooltip-2.jpg" alt="Тренер Ирина Лайм.">
+          </picture>
+          <div class="coaches-modal__wrap">
+            <h3 class="coaches-modal__subtitle subtitle title-reset">Ирина Лайм</h3>
+            <p class="coaches-modal__profession card-descr descr-reset">
+              преподаватель по&nbsp;робототехнике
+            </p>
+            <!-- coach social links -->
+            <ul class="coaches-modal__socials socials list-reset">
+              <li class="socials__item">
+                <a class="socials__link link-reset" href="https://www.facebook.com/"
+                  aria-label="Перейти на сайт Facebook">
+                  <svg class="socials__icon">
+                    <use xlink:href="img/sprite.svg#social-fb"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link link-reset" href="https://www.instagram.com/"
+                  aria-label="Перейти на сайт Instagram">
+                  <svg class="socials__icon">
+                    <use xlink:href="img/sprite.svg#social-insta"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- close modal window button -->
+        <button class="coaches-modal__btn js-modal-btn btn-reset">
+          Закрыть
+        </button>
+        <button class="coaches-modal__btn-mobile js-modal-btn btn-reset">
+          <span class="coaches-modal__btn-mobile__line"></span>
+          <span class="coaches-modal__btn-mobile__line"></span>
+        </button>
+      </div>
+      <!-- coach skills menu -->
+      <ul class="coaches-modal__topic topic list-reset">
+        <li class="topic__item">
+          <button class="topic__btn js-modal-menu btn-reset" data-path="coach-1-aducation">
+            Образование
+          </button>
+        </li>
+        <li class="topic__item">
+          <button class="topic__btn js-modal-menu btn-reset" data-path="coach-1-career">
+            Опыт работы
+          </button>
+        </li>
+        <li class="topic__item">
+          <button class="topic__btn js-modal-menu btn-reset" data-path="coach-1-awards" disabled>
+            Награды
+          </button>
+        </li>
+      </ul>
+      <!-- coach skills menu in mobile -->
+      <select class="coaches-modal__topic-sel topic-sel js-choice" name="select">
+        <option class="topic-sel__item js-modal-menu" value="coach-1-aducation">
+          Образование
+        </option>
+        <option class="topic-sel__item js-modal-menu" value="coach-1-career">
+          Опыт работы
+        </option>
+        <option class="topic-sel__item js-modal-menu" value="coach-1-awards">
+          Награды
+        </option>
+      </select>
+      <!-- coach skills text -->
+      <div class="coaches-modal__text" data-target="coach-1-aducation">
+        <p class="coaches-modal__descr descr-reset">
+          Сентябрь 1995&nbsp;&mdash; Июнь 2000<br>
+          Санкт-Петербургский политехнический университет Петра Великого<br>
+          Факультет: Компьютерных наук и&nbsp;технологий<br>
+          Специальность: Математика и&nbsp;компьютерные науки<br>
+          Форма обучения: Очная
+        </p>
+        <h4 class="coaches-modal__text-subtitle title-reset">Курсы и&nbsp;тренинги</h4>
+        <p class="coaches-modal__descr descr-reset">
+          Ноябрь 2020&nbsp;&mdash; Февраль 2021<br>
+          Программа дополнительного образования &laquo;3D&nbsp;Моделирование&raquo;<br>
+          Место проведения: Институт дополнительного образования &laquo;Политех&raquo;<br>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
+          Aliquam, aperiam maiores dolorem eius et&nbsp;exercitationem dolor<br>
+          nobis quis cupiditate laudantium quae culpa animi dolore assumenda<br>
+          laborum qui tempora quidem sed!
+        </p>
+      </div>
+      <div class="coaches-modal__text" data-target="coach-1-career">
+        <p class="coaches-modal__descr descr-reset">
+          Работу начал&nbsp;&mdash; Работу закончил<br>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+          Lorem ipsum dolor sit amet consectetur.<br>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+          Работу начал&nbsp;&mdash; Работу закончил<br>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+          Lorem ipsum dolor sit amet consectetur.<br>
+        </p>
+      </div>
+      <div class="coaches-modal__text" data-target="coach-1-awards">
+        <p class="coaches-modal__descr descr-reset">
+          Награда такая-то<br>
+          Lorem ipsum dolor sit amet consectetur.<br>
+          Ещё награда<br>
+          Lorem ipsum dolor sit amet consectetur.<br>
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- modal window #2 -->
+  <div class="coaches-modal" data-target="open-modal-2">
+    <div class="coaches-modal__card">
+      <!-- card top part -->
+      <div class="coaches-modal__head">
+        <div class="coaches-modal__head-wrap">
+          <picture>
+            <source srcset="img/coach-img-tooltip-mobile-2.webp" media="(max-width: 620px)">
+            <source srcset="img/coach-img-tooltip-mobile-2.jpg" media="(max-width: 620px)">
+            <source srcset="img/coach-img-tooltip-2.webp">
+            <img class="coaches-modal__img img-style" src="img/coach-img-tooltip-2.jpg" alt="Тренер Марина Орлова.">
+          </picture>
+          <div class="coaches-modal__wrap">
+            <h3 class="coaches-modal__subtitle subtitle title-reset">Марина Орлова</h3>
+            <p class="coaches-modal__profession card-descr descr-reset">
+              преподаватель по&nbsp;робототехнике
+            </p>
+            <!-- coach social links -->
+            <ul class="coaches-modal__socials socials list-reset">
+              <li class="socials__item">
+                <a class="socials__link link-reset" href="https://www.facebook.com/"
+                  aria-label="Перейти на сайт Facebook">
+                  <svg class="socials__icon">
+                    <use xlink:href="img/sprite.svg#social-fb"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link link-reset" href="https://www.instagram.com/"
+                  aria-label="Перейти на сайт Instagram">
+                  <svg class="socials__icon">
+                    <use xlink:href="img/sprite.svg#social-insta"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- close modal window button -->
+        <button class="coaches-modal__btn js-modal-btn btn-reset">
+          Закрыть
+        </button>
+        <button class="coaches-modal__btn-mobile js-modal-btn btn-reset">
+          <span class="coaches-modal__btn-mobile__line"></span>
+          <span class="coaches-modal__btn-mobile__line"></span>
+        </button>
+      </div>
+      <!-- coach skills menu -->
+      <ul class="coaches-modal__topic topic list-reset">
+        <li class="topic__item">
+          <button class="topic__btn js-modal-menu btn-reset" data-path="coach-2-aducation">
+            Образование
+          </button>
+        </li>
+        <li class="topic__item">
+          <button class="topic__btn js-modal-menu btn-reset" data-path="coach-2-career">
+            Опыт работы
+          </button>
+        </li>
+        <li class="topic__item">
+          <button class="topic__btn js-modal-menu btn-reset" data-path="coach-2-awards">
+            Награды
+          </button>
+        </li>
+      </ul>
+      <!-- coach skills menu in mobile -->
+      <select class="coaches-modal__topic-sel topic-sel js-choice" name="select">
+        <option class="topic-sel__item" value="coach-2-aducation">
+          Образование
+        </option>
+        <option class="topic-sel__item" value="coach-2-career">
+          Опыт работы
+        </option>
+        <option class="topic-sel__item" value="coach-2-awards">
+          Награды
+        </option>
+      </select>
+      <!-- coach skills text -->
+      <div class="coaches-modal__text" data-target="coach-2-aducation">
+        <p class="coaches-modal__descr descr-reset">
+          Сентябрь 1995&nbsp;&mdash; Июнь 2000<br>
+          Санкт-Петербургский политехнический университет Петра Великого<br>
+          Факультет: Компьютерных наук и&nbsp;технологий<br>
+          Специальность: Математика и&nbsp;компьютерные науки<br>
+          Форма обучения: Очная
+        </p>
+        <h4 class="coaches-modal__text-subtitle title-reset">Курсы и&nbsp;тренинги</h4>
+        <p class="coaches-modal__descr descr-reset">
+          Ноябрь 2020&nbsp;&mdash; Февраль 2021<br>
+          Программа дополнительного образования &laquo;3D&nbsp;Моделирование&raquo;<br>
+          Место проведения: Институт дополнительного образования &laquo;Политех&raquo;<br>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
+          Aliquam, aperiam maiores dolorem eius et&nbsp;exercitationem dolor<br>
+          nobis quis cupiditate laudantium quae culpa animi dolore assumenda<br>
+          laborum qui tempora quidem sed!
+        </p>
+      </div>
+      <div class="coaches-modal__text" data-target="coach-2-career">
+        <p class="coaches-modal__descr descr-reset">
+          Работу начал&nbsp;&mdash; Работу закончил<br>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+          Lorem ipsum dolor sit amet consectetur.<br>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+          Работу начал&nbsp;&mdash; Работу закончил<br>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+          Lorem ipsum dolor sit amet consectetur.<br>
+        </p>
+      </div>
+      <div class="coaches-modal__text" data-target="coach-2-awards">
+        <p class="coaches-modal__descr descr-reset">
+          Награда такая-то<br>
+          Lorem ipsum dolor sit amet consectetur.<br>
+          Ещё награда<br>
+          Lorem ipsum dolor sit amet consectetur.<br>
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- modal window #3 -->
+  <div class="coaches-modal" data-target="open-modal-3">
+    <div class="coaches-modal__card">
+      <!-- card top part -->
+      <div class="coaches-modal__head">
+        <div class="coaches-modal__head-wrap">
+          <picture>
+            <source srcset="img/coach-img-tooltip-mobile-2.webp" media="(max-width: 6200px)">
+            <source srcset="img/coach-img-tooltip-mobile-2.jpg" media="(max-width: 6200px)">
+            <source srcset="img/coach-img-tooltip-2.webp">
+            <img class="coaches-modal__img img-style" src="img/coach-img-tooltip-2.jpg" alt="Тренер Максим Петров.">
+          </picture>
+          <div class="coaches-modal__wrap">
+            <h3 class="coaches-modal__subtitle subtitle title-reset">Максим Петров</h3>
+            <p class="coaches-modal__profession card-descr descr-reset">
+              преподаватель по&nbsp;программированию
+            </p>
+            <!-- coach social links -->
+            <ul class="coaches-modal__socials socials list-reset">
+              <li class="socials__item">
+                <a class="socials__link link-reset" href="https://www.facebook.com/"
+                  aria-label="Перейти на сайт Facebook">
+                  <svg class="socials__icon">
+                    <use xlink:href="img/sprite.svg#social-fb"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link link-reset" href="https://www.instagram.com/"
+                  aria-label="Перейти на сайт Instagram">
+                  <svg class="socials__icon">
+                    <use xlink:href="img/sprite.svg#social-insta"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- close modal window button -->
+        <button class="coaches-modal__btn js-modal-btn btn-reset">
+          Закрыть
+        </button>
+        <button class="coaches-modal__btn-mobile js-modal-btn btn-reset">
+          <span class="coaches-modal__btn-mobile__line"></span>
+          <span class="coaches-modal__btn-mobile__line"></span>
+        </button>
+      </div>
+      <!-- coach skills menu -->
+      <ul class="coaches-modal__topic topic list-reset">
+        <li class="topic__item">
+          <button class="topic__btn js-modal-menu btn-reset" data-path="coach-3-aducation">
+            Образование
+          </button>
+        </li>
+        <li class="topic__item">
+          <button class="topic__btn js-modal-menu btn-reset" data-path="coach-3-career">
+            Опыт работы
+          </button>
+        </li>
+        <li class="topic__item">
+          <button class="topic__btn js-modal-menu btn-reset" data-path="coach-3-awards">
+            Награды
+          </button>
+        </li>
+      </ul>
+      <!-- coach skills menu in mobile -->
+      <select class="coaches-modal__topic-sel topic-sel js-choice" name="select">
+        <option class="topic-sel__item" value="coach-3-aducation">
+          Образование
+        </option>
+        <option class="topic-sel__item" value="coach-3-career">
+          Опыт работы
+        </option>
+        <option class="topic-sel__item" value="coach-3-awards">
+          Награды
+        </option>
+      </select>
+      <!-- coach skills text -->
+      <div class="coaches-modal__text" data-target="coach-3-aducation">
+        <p class="coaches-modal__descr descr-reset">
+          Сентябрь 1995&nbsp;&mdash; Июнь 2000<br>
+          Санкт-Петербургский политехнический университет Петра Великого<br>
+          Факультет: Компьютерных наук и&nbsp;технологий<br>
+          Специальность: Математика и&nbsp;компьютерные науки<br>
+          Форма обучения: Очная
+        </p>
+        <h4 class="coaches-modal__text-subtitle title-reset">Курсы и&nbsp;тренинги</h4>
+        <p class="coaches-modal__descr descr-reset">
+          Ноябрь 2020&nbsp;&mdash; Февраль 2021<br>
+          Программа дополнительного образования &laquo;3D&nbsp;Моделирование&raquo;<br>
+          Место проведения: Институт дополнительного образования &laquo;Политех&raquo;<br>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
+          Aliquam, aperiam maiores dolorem eius et&nbsp;exercitationem dolor<br>
+          nobis quis cupiditate laudantium quae culpa animi dolore assumenda<br>
+          laborum qui tempora quidem sed!
+        </p>
+      </div>
+      <div class="coaches-modal__text" data-target="coach-3-career">
+        <p class="coaches-modal__descr descr-reset">
+          Работу начал&nbsp;&mdash; Работу закончил<br>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+          Lorem ipsum dolor sit amet consectetur.<br>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+          Работу начал&nbsp;&mdash; Работу закончил<br>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+          Lorem ipsum dolor sit amet consectetur.<br>
+        </p>
+      </div>
+      <div class="coaches-modal__text" data-target="coach-3-awards">
+        <p class="coaches-modal__descr descr-reset">
+          Награда такая-то<br>
+          Lorem ipsum dolor sit amet consectetur.<br>
+          Ещё награда<br>
+          Lorem ipsum dolor sit amet consectetur.<br>
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- modal window #4 -->
+  <div class="coaches-modal" data-target="open-modal-4">
+    <div class="coaches-modal__card">
+      <!-- card top part -->
+      <div class="coaches-modal__head">
+        <div class="coaches-modal__head-wrap">
+          <picture>
+            <source srcset="img/coach-img-tooltip-mobile-2.webp" media="(max-width: 620px)">
+            <source srcset="img/coach-img-tooltip-mobile-2.jpg" media="(max-width: 620px)">
+            <source srcset="img/coach-img-tooltip-2.webp">
+            <img class="coaches-modal__img img-style" src="img/coach-img-tooltip-2.jpg"
+              alt="Тренер Константин Назаров.">
+          </picture>
+          <div class="coaches-modal__wrap">
+            <h3 class="coaches-modal__subtitle subtitle title-reset">Константин Назаров</h3>
+            <p class="coaches-modal__profession card-descr descr-reset">
+              преподаватель по&nbsp;робототехнике
+            </p>
+            <!-- coach social links -->
+            <ul class="coaches-modal__socials socials list-reset">
+              <li class="socials__item">
+                <a class="socials__link link-reset" href="https://www.facebook.com/"
+                  aria-label="Перейти на сайт Facebook">
+                  <svg class="socials__icon">
+                    <use xlink:href="img/sprite.svg#social-fb"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link link-reset" href="https://www.instagram.com/"
+                  aria-label="Перейти на сайт Instagram">
+                  <svg class="socials__icon">
+                    <use xlink:href="img/sprite.svg#social-insta"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- close modal window button -->
+        <button class="coaches-modal__btn js-modal-btn btn-reset">
+          Закрыть
+        </button>
+        <button class="coaches-modal__btn-mobile js-modal-btn btn-reset">
+          <span class="coaches-modal__btn-mobile__line"></span>
+          <span class="coaches-modal__btn-mobile__line"></span>
+        </button>
+      </div>
+      <!-- coach skills menu -->
+      <ul class="coaches-modal__topic topic list-reset">
+        <li class="topic__item">
+          <button class="topic__btn js-modal-menu btn-reset" data-path="coach-4-aducation">
+            Образование
+          </button>
+        </li>
+        <li class="topic__item">
+          <button class="topic__btn js-modal-menu btn-reset" data-path="coach-4-career">
+            Опыт работы
+          </button>
+        </li>
+        <li class="topic__item">
+          <button class="topic__btn js-modal-menu btn-reset" data-path="coach-4-awards">
+            Награды
+          </button>
+        </li>
+      </ul>
+      <!-- coach skills menu in mobile -->
+      <select class="coaches-modal__topic-sel topic-sel js-choice" name="select">
+        <option class="topic-sel__item" value="coach-4-aducation">
+          Образование
+        </option>
+        <option class="topic-sel__item" value="coach-4-career">
+          Опыт работы
+        </option>
+        <option class="topic-sel__item" value="coach-4-awards">
+          Награды
+        </option>
+      </select>
+      <!-- coach skills text -->
+      <div class="coaches-modal__text" data-target="coach-4-aducation">
+        <p class="coaches-modal__descr descr-reset">
+          Сентябрь 1995&nbsp;&mdash; Июнь 2000<br>
+          Санкт-Петербургский политехнический университет Петра Великого<br>
+          Факультет: Компьютерных наук и&nbsp;технологий<br>
+          Специальность: Математика и&nbsp;компьютерные науки<br>
+          Форма обучения: Очная
+        </p>
+        <h4 class="coaches-modal__text-subtitle title-reset">Курсы и&nbsp;тренинги</h4>
+        <p class="coaches-modal__descr descr-reset">
+          Ноябрь 2020&nbsp;&mdash; Февраль 2021<br>
+          Программа дополнительного образования &laquo;3D&nbsp;Моделирование&raquo;<br>
+          Место проведения: Институт дополнительного образования &laquo;Политех&raquo;<br>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
+          Aliquam, aperiam maiores dolorem eius et&nbsp;exercitationem dolor<br>
+          nobis quis cupiditate laudantium quae culpa animi dolore assumenda<br>
+          laborum qui tempora quidem sed!
+        </p>
+      </div>
+      <div class="coaches-modal__text" data-target="coach-4-career">
+        <p class="coaches-modal__descr descr-reset">
+          Работу начал&nbsp;&mdash; Работу закончил<br>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+          Lorem ipsum dolor sit amet consectetur.<br>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+          Работу начал&nbsp;&mdash; Работу закончил<br>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+          Lorem ipsum dolor sit amet consectetur.<br>
+        </p>
+      </div>
+      <div class="coaches-modal__text" data-target="coach-4-awards">
+        <p class="coaches-modal__descr descr-reset">
+          Награда такая-то<br>
+          Lorem ipsum dolor sit amet consectetur.<br>
+          Ещё награда<br>
+          Lorem ipsum dolor sit amet consectetur.<br>
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- modal window #5 -->
+  <div class="coaches-modal" data-target="open-modal-5">
+    <div class="coaches-modal__card">
+      <!-- card top part -->
+      <div class="coaches-modal__head">
+        <div class="coaches-modal__head-wrap">
+          <picture>
+            <source srcset="img/coach-img-tooltip-mobile-2.webp" media="(max-width: 620px)">
+            <source srcset="img/coach-img-tooltip-mobile-2.jpg" media="(max-width: 620px)">
+            <source srcset="img/coach-img-tooltip-2.webp">
+            <img class="coaches-modal__img img-style" src="img/coach-img-tooltip-2.jpg" alt="Тренер Лиза Весенняя.">
+          </picture>
+          <div class="coaches-modal__wrap">
+            <h3 class="coaches-modal__subtitle subtitle title-reset">Лиза Весенняя</h3>
+            <p class="coaches-modal__profession card-descr descr-reset">
+              преподаватель по&nbsp;программированию
+            </p>
+            <!-- coach social links -->
+            <ul class="coaches-modal__socials socials list-reset">
+              <li class="socials__item">
+                <a class="socials__link link-reset" href="https://www.facebook.com/"
+                  aria-label="Перейти на сайт Facebook">
+                  <svg class="socials__icon">
+                    <use xlink:href="img/sprite.svg#social-fb"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link link-reset" href="https://www.instagram.com/"
+                  aria-label="Перейти на сайт Instagram">
+                  <svg class="socials__icon">
+                    <use xlink:href="img/sprite.svg#social-insta"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- close modal window button -->
+        <button class="coaches-modal__btn js-modal-btn btn-reset">
+          Закрыть
+        </button>
+        <button class="coaches-modal__btn-mobile js-modal-btn btn-reset">
+          <span class="coaches-modal__btn-mobile__line"></span>
+          <span class="coaches-modal__btn-mobile__line"></span>
+        </button>
+      </div>
+      <!-- coach skills menu -->
+      <ul class="coaches-modal__topic topic list-reset">
+        <li class="topic__item">
+          <button class="topic__btn js-modal-menu btn-reset" data-path="coach-5-aducation">
+            Образование
+          </button>
+        </li>
+        <li class="topic__item">
+          <button class="topic__btn js-modal-menu btn-reset" data-path="coach-5-career">
+            Опыт работы
+          </button>
+        </li>
+        <li class="topic__item">
+          <button class="topic__btn js-modal-menu btn-reset" data-path="coach-5-awards">
+            Награды
+          </button>
+        </li>
+      </ul>
+      <!-- coach skills menu in mobile -->
+      <select class="coaches-modal__topic-sel topic-sel js-choice" name="select">
+        <option class="topic-sel__item" value="coach-5-aducation">
+          Образование
+        </option>
+        <option class="topic-sel__item" value="coach-5-career">
+          Опыт работы
+        </option>
+        <option class="topic-sel__item" value="coach-5-awards">
+          Награды
+        </option>
+      </select>
+      <!-- coach skills text -->
+      <div class="coaches-modal__text" data-target="coach-5-aducation">
+        <p class="coaches-modal__descr descr-reset">
+          Сентябрь 1995&nbsp;&mdash; Июнь 2000<br>
+          Санкт-Петербургский политехнический университет Петра Великого<br>
+          Факультет: Компьютерных наук и&nbsp;технологий<br>
+          Специальность: Математика и&nbsp;компьютерные науки<br>
+          Форма обучения: Очная
+        </p>
+        <h4 class="coaches-modal__text-subtitle title-reset">Курсы и&nbsp;тренинги</h4>
+        <p class="coaches-modal__descr descr-reset">
+          Ноябрь 2020&nbsp;&mdash; Февраль 2021<br>
+          Программа дополнительного образования &laquo;3D&nbsp;Моделирование&raquo;<br>
+          Место проведения: Институт дополнительного образования &laquo;Политех&raquo;<br>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
+          Aliquam, aperiam maiores dolorem eius et&nbsp;exercitationem dolor<br>
+          nobis quis cupiditate laudantium quae culpa animi dolore assumenda<br>
+          laborum qui tempora quidem sed!
+        </p>
+      </div>
+      <div class="coaches-modal__text" data-target="coach-5-career">
+        <p class="coaches-modal__descr descr-reset">
+          Работу начал&nbsp;&mdash; Работу закончил<br>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+          Lorem ipsum dolor sit amet consectetur.<br>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+          Работу начал&nbsp;&mdash; Работу закончил<br>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+          Lorem ipsum dolor sit amet consectetur.<br>
+        </p>
+      </div>
+      <div class="coaches-modal__text" data-target="coach-5-awards">
+        <p class="coaches-modal__descr descr-reset">
+          Награда такая-то<br>
+          Lorem ipsum dolor sit amet consectetur.<br>
+          Ещё награда<br>
+          Lorem ipsum dolor sit amet consectetur.<br>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="libs/js/choices.min.js"></script>
+  <script src="js/just-validate.min.js"></script>
+  <script src="js/inputmask.min.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
