@@ -1,7 +1,16 @@
+const activeClass = 'coaches-modal__text--active';
 const page = document.querySelector('.page__body');
 const modals = document.querySelectorAll('.coaches-modal');
 const skillsMenu = document.querySelectorAll('.js-modal-menu');
 const skillsTxt = document.querySelectorAll('.coaches-modal__text');
+
+function setTxtBlockHeight() {
+  const modalTxtBlock = document.querySelector(`.${activeClass}`);
+  
+  if (modalTxtBlock.offsetHeight >= 400) {
+    modalTxtBlock.classList.add('scroll-txt');
+  }
+}
 
 function closeModalWindow() {
   //* remove active window
@@ -16,7 +25,7 @@ function closeModalWindow() {
 
   //* remove active text
   skillsTxt.forEach((txt) => {
-    txt.classList.remove('coaches-modal__text--active');
+    txt.classList.remove(activeClass);
   });
 
   page.classList.remove('stop-scroll');
@@ -36,7 +45,8 @@ function openModalWindow() {
       document.querySelector(`[data-target='${path}']`).classList.add('open-modal');
 
       document.querySelector('.open-modal').querySelector('.topic__btn').classList.add('topic__btn--active');
-      document.querySelector('.open-modal').querySelector('.coaches-modal__text').classList.add('coaches-modal__text--active');
+      document.querySelector('.open-modal').querySelector('.coaches-modal__text').classList.add(activeClass);
+      setTxtBlockHeight();
 
       page.classList.add('stop-scroll');
     });
@@ -45,13 +55,14 @@ function openModalWindow() {
 
 function changeModalWindowTxt(path) {
   skillsTxt.forEach((txt) => {
-    txt.classList.remove('coaches-modal__text--active');
+    txt.classList.remove(activeClass);
   });
 
-  document.querySelector(`[data-target='${path}']`).classList.add('coaches-modal__text--active');
+  document.querySelector(`[data-target='${path}']`).classList.add(activeClass);
+  setTxtBlockHeight();
 }
 
-function getcloseModalWindowBtn() {
+function getCloseModalWindowBtn() {
   //* close modal window by button
   const closeBtns = document.querySelectorAll('.js-modal-btn');
   closeBtns.forEach((btn) => {
@@ -110,7 +121,7 @@ function getSkillsMenuChanging() {
 
 export function getCoachModalWindow() {
   openModalWindow();
-  getcloseModalWindowBtn();
+  getCloseModalWindowBtn();
   selectSkill();
   getSkillsMenuChanging();
 }

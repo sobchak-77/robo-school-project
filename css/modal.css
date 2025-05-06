@@ -35,7 +35,6 @@
   right: 0;
   bottom: 0;
   max-width: 940px;
-  min-height: 768px;
   margin: auto;
   padding: 40px;
   border-radius: var(--card-border-rad);
@@ -259,10 +258,8 @@
 
 .coaches-modal__text {
   display: none;
-  height: 414px;
   padding-top: 19px;
   border-top: 1px solid var(--disabled-color);
-  overflow-y: auto;
 }
 
 .coaches-modal__text::after {
@@ -307,6 +304,11 @@
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.08);
   opacity: 0.4;
+}
+
+.scroll-txt {
+  height: 400px;
+  overflow-y: auto;
 }
 
 /* --- custom scrollbar --- */
