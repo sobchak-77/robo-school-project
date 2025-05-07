@@ -4,7 +4,7 @@ const modals = document.querySelectorAll('.coaches-modal');
 const skillsMenu = document.querySelectorAll('.js-modal-menu');
 const skillsTxt = document.querySelectorAll('.coaches-modal__text');
 
-function setTxtBlockHeight() {
+function getTxtBlockHeight() {
   const modalTxtBlock = document.querySelector(`.${activeClass}`);
   
   if (modalTxtBlock.offsetHeight >= 400) {
@@ -46,7 +46,7 @@ function openModalWindow() {
 
       document.querySelector('.open-modal').querySelector('.topic__btn').classList.add('topic__btn--active');
       document.querySelector('.open-modal').querySelector('.coaches-modal__text').classList.add(activeClass);
-      setTxtBlockHeight();
+      getTxtBlockHeight();
 
       page.classList.add('stop-scroll');
     });
@@ -59,7 +59,7 @@ function changeModalWindowTxt(path) {
   });
 
   document.querySelector(`[data-target='${path}']`).classList.add(activeClass);
-  setTxtBlockHeight();
+  getTxtBlockHeight();
 }
 
 function getCloseModalWindowBtn() {

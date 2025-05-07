@@ -38,7 +38,6 @@
   margin: auto;
   padding: 40px;
   border-radius: var(--card-border-rad);
-  overflow-y: auto;
   background-color: #fff;
   -webkit-transform: scale(0);
       -ms-transform: scale(0);
@@ -257,25 +256,38 @@
 /* --- text about coach skills --- */
 
 .coaches-modal__text {
+  position: relative;
   display: none;
   padding-top: 19px;
   border-top: 1px solid var(--disabled-color);
 }
 
-.coaches-modal__text::after {
+/* .coaches-modal__text::after {
   content: "";
-  position: absolute;
+  position: fixed;
   left: 0;
   bottom: 0;
-  width: 93%;
+  width: 92%;
   height: 80px;
   background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, #fff));
   background: -o-linear-gradient(top, transparent, #fff 50%);
   background: linear-gradient(180deg, transparent, #fff 50%);
-}
+} */
 
 .coaches-modal__text--active {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.scroll-txt {
+  height: 400px;
+  overflow-y: auto;
 }
 
 .coaches-modal__descr {
@@ -285,12 +297,7 @@
   color: var(--main-text-color);
 }
 
-.coaches-modal__descr:not(:last-child) {
-  padding-bottom: 40px;
-}
-
 .coaches-modal__text-subtitle {
-  margin-bottom: 20px;
   font-size: 24px;
   font-weight: 600;
   line-height: 1.6;
@@ -304,11 +311,6 @@
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.08);
   opacity: 0.4;
-}
-
-.scroll-txt {
-  height: 400px;
-  overflow-y: auto;
 }
 
 /* --- custom scrollbar --- */
