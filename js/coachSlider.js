@@ -2,7 +2,7 @@ export function getSliderChoach() {
   const swiper = new Swiper('.swiper', {
     slidesPerGroup: 1,
     speed: 300,
-    loop: true,
+    loop: false,
     draggable: true,
     navigation: {
       prevEl: '.swiper-button-prev',
